@@ -13,19 +13,19 @@ Para **Pepón**:
 - _volar_: 
   Gasta 1 joule fijo y 0.5 joules por cada kilómetro recorrido.
 - _hacer lo que quiera_: 
-  Pepón siempre vuela 1 km en este caso.
-- _energia_: el objeto que modela a Pepón debe ser capaz de responder si se le consulta la `energia()`.
+  Pepón siempre vuela 10 kms en este caso.
+- _energia_: el objeto que modela a Pepón debe ser capaz de responder si se le consulta la `energia()`. Cuando Pepón nace, su energía es 0.
 
 <br/>
 
 Para **Pipa**: 
 
-No nos interesa controlar su energía, sino que simplemente recuerde el acumulado de cuántos kms vuela y cuántos gramos de comida (sin importar de dqué se trate) ingiere. Esta información se puede consultar a través de los mensajes `kmsRecorridos()` y `gramosIngeridos()`. Cuando le piden que haga lo que quiera, Pipa no hace nada.
+No nos interesa controlar su energía, sino que simplemente recuerde el acumulado de cuántos kms vuela y cuántos gramos de comida (sin importar de dqué se trate) ingiere. Esta información se puede consultar a través de los mensajes `kmsRecorridos()` y `gramosIngeridos()`. 
 
 Por ejemplo, si Pipa come 30 gramos de alpiste, después vuela 15 kilómetros, después come 25 gramos de mondongo, y después vuela 8 kilómentros, entonces: 
 
 - el resultado de `pipa.gramosIngeridos()` es 55, y
 - el resultado de `pipa.kmsRecorridos()` es 23.
 
-
+Cuando le piden que haga lo que quiera, Pipa no hace nada.
 

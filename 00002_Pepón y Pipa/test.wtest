@@ -6,5 +6,75 @@ describe "Pepón y Pipa" {
 	test "Pipa existe" {
 		pipa
 	}
+	
+	test "Pepón come alpiste" {
+	  pepon.comer(alpiste, 20)
+	  assert.equals(40, pepon.energia())
+	}
+
+	test "Pepón come mondongo" {
+	  pepon.comer(alpiste, 20)
+	  pepon.comer(mondongo, 20)
+	  assert.equals(1040, pepon.energia())
+	}
+	
+	test "Pepón vuela" {
+	  pepon.comer(alpiste, 20)
+	  pepon.volar(30)
+	  assert.equals(24, pepon.energia())
+	}
+
+	test "Pepón vuela dos veces" {
+	  pepon.comer(alpiste, 50)
+	  pepon.volar(20)
+	  pepon.volar(40)
+	  assert.equals(68, pepon.energia())
+	}
   
+  test "Pepón hace lo que quiere" {
+	  pepon.comer(mondongo, 10)
+	  pepon.haceLoQueQuieras()
+	  assert.equals(489, pepon.energia())
+  }
+  
+  test "Pipa come alpiste" {
+    pipa.comer(alpiste, 20)
+	  assert.equals(20, pipa.gramosIngeridos())
+	  assert.equals(0, pipa.kmsRecorridos())
+  }
+
+  test "Pipa come mondongo" {
+    pipa.comer(mondongo, 15)
+	  assert.equals(15, pipa.gramosIngeridos())
+	  assert.equals(0, pipa.kmsRecorridos())
+  }
+
+  test "Pipa vuela" {
+    pipa.volar(80)
+	  assert.equals(0, pipa.gramosIngeridos())
+	  assert.equals(80, pipa.kmsRecorridos())
+  }
+
+  test "Pipa come y vuela" {
+    pipa.comer(alpiste, 30)
+    pipa.volar(15)
+    pipa.comer(mondongo, 25)
+    pipa.volar(8)
+	  assert.equals(55, pipa.gramosIngeridos())
+	  assert.equals(23, pipa.kmsRecorridos())
+  }
+
+  test "Pipa hace lo que quiere" {
+    pipa.haceLoQueQuieras()
+	  assert.equals(0, pipa.gramosIngeridos())
+	  assert.equals(0, pipa.kmsRecorridos())
+    pipa.comer(mondongo, 25)
+    pipa.volar(8)
+	  assert.equals(25, pipa.gramosIngeridos())
+	  assert.equals(8, pipa.kmsRecorridos())
+    pipa.haceLoQueQuieras()
+	  assert.equals(25, pipa.gramosIngeridos())
+	  assert.equals(8, pipa.kmsRecorridos())
+  }
 }
+
