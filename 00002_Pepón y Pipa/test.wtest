@@ -4,7 +4,7 @@ describe "Pepón y Pipa" {
 	}
 
 	test "Pipa existe" {
-		pepon
+		pipa
 	}
   
 }
