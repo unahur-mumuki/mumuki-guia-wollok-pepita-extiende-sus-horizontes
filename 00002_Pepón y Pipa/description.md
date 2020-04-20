@@ -2,6 +2,8 @@ En este ejercicio, lo que se pide es definir a Pepón el gorrión y a Pipa la pa
 
 Al igual que Pepita, Pepón y Pipa deben aceptar las indicaciones de comer, volar y hacer lo que quieran, de acuerdo a lo que se describe más abajo.
 
+Las definiciones de las comidas, alpiste, mondongo y sorgo, ya vienen cargadas en la consola.
+
 Es **muy importante** que los objetos que modelan a las nuevas dos aves sean polimórficos con Pepita respecto de estas tres operaciones, eso lo vamos a necesitar para el ejercicio siguiente.
 
 Van las reglas de comportamiento de las aves.
