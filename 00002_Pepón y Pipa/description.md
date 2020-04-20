@@ -14,6 +14,7 @@ Para **Pepón**:
   Gasta 1 joule fijo y 0.5 joules por cada kilómetro recorrido.
 - _hacer lo que quiera_: 
   Pepón siempre vuela 1 km en este caso.
+- _energia_: el objeto que modela a Pepón debe ser capaz de responder si se le consulta la `energia()`.
 
 <br/>
 

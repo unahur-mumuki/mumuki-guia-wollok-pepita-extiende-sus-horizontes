@@ -1,5 +1,10 @@
-describe "Group description"{
-	test "Sample description" {
-		assert.that(true)
+describe "Pepón y Pipa" {
+	test "Pepón existe" {
+		pepon
 	}
+
+	test "Pipa existe" {
+		pepon
+	}
+  
 }
