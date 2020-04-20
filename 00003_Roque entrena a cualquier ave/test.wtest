@@ -1,5 +1,61 @@
-describe "Group description"{
-	test "Sample description" {
-		assert.that(true)
+describe "Roque entrena a cualquier ave" {
+	test "Entrena a pepita" {
+	  pepita.comer(mondongo,2)
+	  pipa.comer(mondongo,2)
+	  roque.tuPupiloEs(pepita)
+	  roque.entrenar()
+		assert.equals(1365, pepita.energia())
+		assert.equals(0, pepon.energia())
+		assert.equals(2, pipa.gramosIngeridos())
+		assert.equals(0, pipa.kmsRecorridos())
+	}
+	
+	test "Entrena a pepón" {
+	  pepita.comer(mondongo,2)
+	  pepon.comer(mondongo,2)
+	  roque.tuPupiloEs(pepon)
+	  roque.entrenar()
+		assert.equals(200, pepita.energia())
+		assert.equals(684.5, pepon.energia())
+		assert.equals(0, pipa.gramosIngeridos())
+		assert.equals(0, pipa.kmsRecorridos())
+	}
+
+	test "Entrena a pipa" {
+	  pipa.comer(mondongo,2)
+	  roque.tuPupiloEs(pipa)
+	  roque.entrenar()
+		assert.equals(0, pepita.energia())
+		assert.equals(0, pepon.energia())
+		assert.equals(302, pipa.gramosIngeridos())
+		assert.equals(15, pipa.kmsRecorridos())
+	}
+	
+	test "Entrena primero a pepita, después a pipa" {
+	  pepita.comer(mondongo,2)
+	  pipa.comer(mondongo,2)
+	  roque.tuPupiloEs(pepita)
+	  roque.entrenar()
+	  roque.tuPupiloEs(pipa)
+	  roque.entrenar()
+		assert.equals(1365, pepita.energia())
+		assert.equals(0, pepon.energia())
+		assert.equals(302, pipa.gramosIngeridos())
+		assert.equals(15, pipa.kmsRecorridos())
+	}
+
+	test "Entrena primero a pepon, después a pepita 2 veces" {
+	  pepita.comer(mondongo,2)
+	  pipa.comer(mondongo,2)
+	  pepon.comer(mondongo,2)
+	  roque.tuPupiloEs(pepon)
+	  roque.entrenar()
+	  roque.tuPupiloEs(pepita)
+	  roque.entrenar()
+	  roque.entrenar()
+		assert.equals(2545, pepita.energia())
+		assert.equals(684.5, pepon.energia())
+		assert.equals(2, pipa.gramosIngeridos())
+		assert.equals(0, pipa.kmsRecorridos())
 	}
 }
