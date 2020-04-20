@@ -34,7 +34,7 @@ describe "Pepón y Pipa" {
   test "Pepón hace lo que quiere" {
 	  pepon.comer(mondongo, 10)
 	  pepon.haceLoQueQuieras()
-	  assert.equals(489, pepon.energia())
+	  assert.equals(494, pepon.energia())
   }
   
   test "Pipa come alpiste" {
