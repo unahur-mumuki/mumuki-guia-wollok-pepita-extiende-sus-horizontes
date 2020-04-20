@@ -5,11 +5,16 @@ Les presentamos a **Roque**, el entrenador de Pepita. Cuando entrena a Pepita us
 3. Volar 5 kms.
 4. Que el ave haga lo que quiera como premio.
 
-Se pide definir un objeto que represente a Roque, que entienda el mensaje `entrenar()`.
+Se pide definir un objeto que represente a Roque, que entienda el mensaje `entrenar()`. 
+
+**Atención**: para que la solución pase las pruebas, el objeto se tiene que llamar exactamente `roque`.
 
 La consola ya incluye a los objetos `pepita`, `alpiste`, `mondongo` y `sorgo`. El objeto `pepita` entiende estos mensajes:
 
 - `comer(comida, gramos)`
 - `volar(kilometros)`
 - `haceLoQueQuieras()`
+- `energia()`
+- `estaDebil()`
+- `estaFeliz()`
 

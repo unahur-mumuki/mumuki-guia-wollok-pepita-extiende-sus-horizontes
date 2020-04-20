@@ -1,5 +1,14 @@
-describe "Group description"{
-	test "Sample description" {
-		assert.that(true)
+describe "Roque entrena a Pepita" {
+	test "Roque existe y puede entrenar" {
+		roque.entrenar()
+	}
+
+	test "Pepita termina con la energía correcta" {
+		// primero que coma un poco, llega a 200
+		pepita.comer(mondongo, 2)
+		// ahora entrena
+	  roque.entrenar()
+	  // con cuánta energia tiene que quedar
+	  assert.equals(1365, pepita.energia())
 	}
 }
