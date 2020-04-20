@@ -22,7 +22,7 @@ Para **Pepón**:
 
 Para **Pipa**: 
 
-No nos interesa controlar su energía, sino que simplemente recuerde el acumulado de cuántos kms vuela y cuántos gramos de comida (sin importar de dqué se trate) ingiere. Esta información se puede consultar a través de los mensajes `kmsRecorridos()` y `gramosIngeridos()`. 
+No nos interesa controlar su energía, sino que simplemente recuerde el acumulado de cuántos kms vuela y cuántos gramos de comida (sin importar de qué se trate) ingiere. Esta información se puede consultar a través de los mensajes `kmsRecorridos()` y `gramosIngeridos()`. 
 
 Por ejemplo, si Pipa come 30 gramos de alpiste, después vuela 15 kilómetros, después come 25 gramos de mondongo, y después vuela 8 kilómentros, entonces: 
 
