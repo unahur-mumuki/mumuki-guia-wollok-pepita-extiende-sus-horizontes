@@ -1,5 +1,13 @@
-describe "Group description"{
-	test "Sample description" {
-		assert.that(true)
+describe "Pepita visita lugares" {
+	test "Patagonia" {
+	  pepita.comer(alpiste, 50)
+	  pepita.visitar(patagonia)
+		assert.equals(230, pepita.energia())
+	}
+
+	test "Sierras cordobesas" {
+	  pepita.comer(alpiste, 50)
+	  pepita.visitar(sierrasCordobesas)
+		assert.equals(270, pepita.energia())
 	}
 }
