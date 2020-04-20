@@ -53,7 +53,7 @@ describe "Roque entrena a cualquier ave" {
 	  roque.tuPupiloEs(pepita)
 	  roque.entrenar()
 	  roque.entrenar()
-		assert.equals(2545, pepita.energia())
+		assert.equals(2530, pepita.energia())
 		assert.equals(684.5, pepon.energia())
 		assert.equals(2, pipa.gramosIngeridos())
 		assert.equals(0, pipa.kmsRecorridos())
