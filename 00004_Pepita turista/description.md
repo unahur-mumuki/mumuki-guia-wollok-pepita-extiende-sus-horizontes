@@ -6,12 +6,12 @@ En este ejercicio, tenemos que agregar a la definición de `pepita` el método `
 
 ## Dos destinos iniciales
 Considerar estos dos lugares:
-- **Patagonia**: aporta 30 joules de energía revitalizadora
-- **SierrasCordobesas**: aporta 70 joules de energía revitalizadora
+- `patagonia`: aporta 30 joules de energía revitalizadora
+- `sierrasCordobesas`: aporta 70 joules de energía revitalizadora
 
 
 ## Mar del Plata
-Agregar entre los lugares en los que pepita puede vacacionar a Mar del plata. 
+Agregar entre los lugares en los que pepita puede vacacionar a `marDelPlata`. 
 La energía revitalizadora que aporta depende de si se trata de temporada alta o baja. En temporada baja aporta 80 joules, mientras que en alta resta 20 joules. 
 
 **TIP**: se puede pensar que en temporada alta la energía que aporta es -20.	
@@ -21,7 +21,7 @@ La energía revitalizadora que aporta depende de si se trata de temporada alta o
 	
 	
 ## Noroeste
-Agregar entre los lugares en los que pepita puede vacacionar al Noroeste argentino. 
+Agregar entre los lugares en los que pepita puede vacacionar al `noroeste` argentino. 
 La energia revitalizadora que aporta es el 10% de la energía del ave viajera. 
 
 **Cosas para pensar**: <br> 
